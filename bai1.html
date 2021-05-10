@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Điểm trung bình</title>
+</head>
+<body>
+<script>
+    //Nhập điểm
+    var nhapdiemLy = prompt("Nhập điểm môn Vật Lý:")
+    var nhapdiemHoa = prompt("Nhập điểm môn Hóa Học:")
+    var nhapdiemSinh = prompt("Nhập điểm môn Sinh Học:")
+    // Chuyển sang số thực
+    var diemLy = parseFloat(nhapdiemLy);
+    var diemHoa = parseFloat(nhapdiemHoa);
+    var diemSinh = parseFloat(nhapdiemSinh);
+    //tính toán:
+    var sum = diemLy+diemHoa+diemSinh;
+    var avg = sum/3;
+    // in ra màn hình
+    document.write("Điểm tổng 3 môn là: "+sum);
+    document.write("<br>");
+    document.write("Điểm trung bình 3 môn là: "+avg);
+</script>
+</body>
+</html>
